@@ -74,7 +74,7 @@
   --max-width-wide: 1440px;
   
   --header-height: 48px;
-  --strip-height: 28px;
+  --strip-height: 0px;
   
   /* Border Radius - Apple's Precision */
   --radius-sm: 4px;
@@ -186,7 +186,7 @@ body {
 
 main {
   flex: 1;
-  padding-top: calc(var(--header-height) + var(--strip-height));
+  padding-top: var(--header-height);
 }
 
 /* Typography - Apple's Approach */
@@ -258,12 +258,11 @@ img {
 
 .header {
   position: fixed;
-  top: var(--strip-height);
+  top: 0;
   left: 0;
   right: 0;
   height: var(--header-height);
   background-color: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
   z-index: var(--z-fixed);
   transition: background-color 0.3s var(--ease-out);
 }
@@ -278,31 +277,6 @@ img {
   justify-content: space-between;
 }
 
-/* Site Strip - Cross-site navigation */
-.site-strip {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: var(--strip-height);
-  display: flex;
-  align-items: center;
-  padding: 0 24px;
-  background-color: var(--color-bg-tertiary);
-  border-bottom: 1px solid var(--color-border);
-  z-index: 1001;
-}
-
-.site-strip__link {
-  font-size: 12px;
-  color: var(--color-text-tertiary);
-  text-decoration: none;
-}
-
-.site-strip__link:hover {
-  color: var(--color-text);
-  text-decoration: underline;
-}
 
 .nav__brand {
   display: flex;
@@ -719,6 +693,16 @@ img {
   color: var(--color-text-tertiary);
   font-size: var(--font-size-sm);
   margin: 0;
+}
+
+.footer__text a {
+  color: var(--color-text-tertiary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__text a:hover {
+  color: var(--color-text);
 }
 
 /* ============================================
