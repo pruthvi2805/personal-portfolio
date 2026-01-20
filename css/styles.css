@@ -74,6 +74,7 @@
   --max-width-wide: 1440px;
   
   --header-height: 48px;
+  --strip-height: 28px;
   
   /* Border Radius - Apple's Precision */
   --radius-sm: 4px;
@@ -185,7 +186,7 @@ body {
 
 main {
   flex: 1;
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + var(--strip-height));
 }
 
 /* Typography - Apple's Approach */
@@ -257,7 +258,7 @@ img {
 
 .header {
   position: fixed;
-  top: 0;
+  top: var(--strip-height);
   left: 0;
   right: 0;
   height: var(--header-height);
@@ -279,7 +280,15 @@ img {
 
 /* Site Strip - Cross-site navigation */
 .site-strip {
-  padding: 8px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--strip-height);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 1001;
 }
 
 .site-strip__link {
@@ -594,9 +603,9 @@ img {
     display: none;
   }
 
-  /* Adjust main padding for smaller header */
+  /* Adjust main padding for smaller header + strip */
   main {
-    padding-top: 44px;
+    padding-top: calc(44px + var(--strip-height));
   }
 
   /* Hide theme toggle in header on mobile - it's in the footer */
@@ -1661,7 +1670,7 @@ main:has(.resume-layout)::after {
   .resume-mobile-nav {
     display: block;
     position: sticky;
-    top: 44px;
+    top: calc(44px + var(--strip-height));
     left: 0;
     right: 0;
     background-color: var(--color-bg);
@@ -1771,7 +1780,7 @@ main:has(.resume-layout)::after {
 /* Resume Section Navigation - Horizontal Sticky Bar */
 .resume-section-nav {
   position: sticky;
-  top: var(--header-height);
+  top: calc(var(--header-height) + var(--strip-height));
   background-color: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   z-index: 50;
