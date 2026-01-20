@@ -288,6 +288,8 @@ img {
   display: flex;
   align-items: center;
   padding: 0 24px;
+  background-color: var(--color-bg-tertiary);
+  border-bottom: 1px solid var(--color-border);
   z-index: 1001;
 }
 
