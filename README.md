@@ -1,23 +1,77 @@
-# Personal Portfolio
+# Portfolio - Pruthvi Kauticwar
 
-Professional portfolio website for Pruthvi Kauticwar.
+A professional portfolio website showcasing work experience, skills, and projects.
 
-**Live:** https://portfolio.kpruthvi.com
+---
+
+## Live Site
+
+https://portfolio.kpruthvi.com
+
+---
+
+## Features
+
+- Responsive design (desktop + mobile)
+- Dark/light mode toggle
+- Print-optimized resume view
+- Contact form with Cloudflare Worker backend
+- SEO setup (sitemap, meta tags)
+
+---
+
+## Pages
+
+- `/` - Home/portfolio
+- `/resume.html` - Resume/CV
+- `/resume-print.html` - Print-friendly resume
+- `/contact.html` - Contact form
+
+---
+
+## Tech Stack
+
+- Vanilla HTML, CSS, JavaScript
+- CSS custom properties for theming
+- Cloudflare Pages (static hosting)
+- Cloudflare Workers (contact form backend)
+
+---
 
 ## Structure
 
 ```
-├── index.html      # Homepage
-├── resume.html     # Resume/CV page
-├── contact.html    # Contact form
-├── css/            # Stylesheets
-└── js/             # JavaScript
+personal-portfolio/
+├── index.html          ← Portfolio home
+├── resume.html         ← Resume/CV
+├── resume-print.html   ← Print-friendly resume
+├── contact.html        ← Contact form
+├── css/
+├── js/
+├── sitemap.xml
+└── LICENSE
 ```
 
-## Development
+---
 
-Open `index.html` in a browser to preview locally.
+## Local Development
+
+Open `index.html` directly in a browser, or run a local server:
+
+```bash
+python -m http.server 8000
+```
+
+Then visit `http://localhost:8000`
+
+---
 
 ## Deployment
 
-Hosted on Cloudflare Pages. Pushes to `main` branch auto-deploy.
+Push to `main` branch → Cloudflare Pages auto-deploys
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE)
