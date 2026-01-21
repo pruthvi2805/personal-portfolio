@@ -5,7 +5,7 @@
 
 class ThemeManager {
   constructor() {
-    this.theme = localStorage.getItem('theme') || 'light';
+    this.theme = localStorage.getItem('kp-theme') || 'light';
     this.themeToggles = document.querySelectorAll('.theme-toggle');
     this.isInitialLoad = true;
     this.init();
@@ -34,7 +34,7 @@ class ThemeManager {
   setTheme(theme) {
     this.theme = theme;
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    localStorage.setItem('kp-theme', theme);
     this.updateAriaLabels();
     this.updateTurnstileTheme();
   }

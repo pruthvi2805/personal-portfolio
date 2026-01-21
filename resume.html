@@ -7,7 +7,7 @@
   <!-- Prevent flash of wrong theme by applying saved theme immediately -->
   <script>
     (function() {
-      var theme = localStorage.getItem('theme');
+      var theme = localStorage.getItem('kp-theme');
       if (theme) {
         document.documentElement.setAttribute('data-theme', theme);
       }
@@ -64,7 +64,7 @@
         <ul class="nav__list">
           <li><a href="index.html" class="nav__link">Home</a></li>
           <li><a href="resume.html" class="nav__link active">Resume</a></li>
-          <li><a href="contact.html" class="nav__link">Contact</a></li>
+          <li><a href="https://kpruthvi.com/contact" class="nav__link">Contact</a></li>
         </ul>
         <button class="theme-toggle" aria-label="Toggle dark mode">
           <span class="theme-toggle__icon"></span>
@@ -369,21 +369,16 @@
     <ul class="mobile-bottom-nav__list">
       <li><a href="index.html" class="mobile-bottom-nav__link">Home</a></li>
       <li><a href="resume.html" class="mobile-bottom-nav__link active">Resume</a></li>
-      <li><a href="contact.html" class="mobile-bottom-nav__link">Contact</a></li>
+      <li><a href="https://kpruthvi.com/contact" class="mobile-bottom-nav__link">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__content">
-      <div class="footer__row">
-        <p class="footer__text">
-          &copy; 2026 Pruthvi Kauticwar · <a href="https://www.kpruthvi.com">kpruthvi.com</a>
-        </p>
-        <button class="theme-toggle theme-toggle--footer" aria-label="Toggle dark mode">
-          <span class="theme-toggle__icon"></span>
-        </button>
-      </div>
+      <p class="footer__text">
+        &copy; 2026 Pruthvi Kauticwar · <a href="https://www.kpruthvi.com">kpruthvi.com</a> · <a href="https://kpruthvi.com/contact">Contact</a>
+      </p>
     </div>
   </footer>
 
