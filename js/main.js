@@ -5,7 +5,7 @@
 
 class ThemeManager {
   constructor() {
-    this.theme = localStorage.getItem('kp-theme') || 'light';
+    this.theme = localStorage.getItem('kp-theme') || 'dark';
     this.themeToggles = document.querySelectorAll('.theme-toggle');
     this.isInitialLoad = true;
     this.init();
