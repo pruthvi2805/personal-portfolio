@@ -1,28 +1,45 @@
 /* ============================================
-   WARM NEUTRAL + INK DESIGN SYSTEM
-   Editorial aesthetic for professional credibility
+   MIDNIGHT AURORA DESIGN SYSTEM
+   Sophisticated elegance with subtle luminosity
    ============================================ */
 
 :root {
-  /* Warm Terracotta Color Palette - Light Mode */
-  --color-primary: #C17B5F;
-  --color-primary-dark: #A66248;
-  --color-primary-light: #D4967D;
+  /* Aurora Color Palette - Light Mode */
+  --color-primary: #7C3AED;           /* Violet 600 - refined elegance */
+  --color-primary-dark: #6D28D9;      /* Violet 700 - depth */
+  --color-primary-light: #8B5CF6;     /* Violet 500 - highlights */
+  --color-primary-glow: rgba(139, 92, 246, 0.15);
 
-  --color-bg: #FAFAF8;
-  --color-bg-secondary: #F5F5F3;
-  --color-bg-tertiary: #EEEEE9;
+  --color-accent: #F59E0B;            /* Amber 500 - warm accent */
+  --color-accent-dark: #D97706;       /* Amber 600 */
+  --color-accent-light: #FBBF24;      /* Amber 400 */
+
+  --color-bg: #FAFAFA;
+  --color-bg-secondary: #F4F4F5;
+  --color-bg-tertiary: #E4E4E7;
   --color-bg-elevated: #FFFFFF;
 
-  --color-text: #1A1A1A;
-  --color-text-secondary: #6B6B6B;
-  --color-text-tertiary: #888888;
+  --color-text: #18181B;
+  --color-text-secondary: #52525B;
+  --color-text-tertiary: #71717A;
 
-  --color-border: #E8E6E3;
-  --color-border-hover: #D8D6D3;
+  --color-border: #E4E4E7;
+  --color-border-hover: #D4D4D8;
 
-  --color-shadow: rgba(0, 0, 0, 0.06);
-  --color-shadow-elevated: rgba(0, 0, 0, 0.1);
+  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-shadow-elevated: rgba(0, 0, 0, 0.08);
+  --color-shadow-primary: rgba(124, 58, 237, 0.15);
+
+  /* Gradient System */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, #EC4899 100%);
+  --gradient-aurora: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F59E0B 100%);
+  --gradient-subtle: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-secondary) 100%);
+  --gradient-card-shine: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%);
+
+  /* Glass Effect */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   
   /* Typography - Inter */
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", sans-serif;
@@ -129,26 +146,43 @@
   transition: none !important;
 }
 
-/* Dark Mode - Warm Black */
+/* Dark Mode - Midnight Aurora */
 [data-theme="dark"] {
-  --color-primary: #D4967D;
-  --color-primary-dark: #C17B5F;
-  --color-primary-light: #E5B09A;
+  --color-primary: #A78BFA;           /* Violet 400 - brighter for dark bg */
+  --color-primary-dark: #8B5CF6;      /* Violet 500 */
+  --color-primary-light: #C4B5FD;     /* Violet 300 */
+  --color-primary-glow: rgba(167, 139, 250, 0.2);
 
-  --color-bg: #1A1A1A;
-  --color-bg-secondary: #222222;
-  --color-bg-tertiary: #2A2A2A;
-  --color-bg-elevated: #252525;
+  --color-accent: #FBBF24;            /* Amber 400 - warmer for dark */
+  --color-accent-dark: #F59E0B;
+  --color-accent-light: #FCD34D;
 
-  --color-text: #F5F4F2;
-  --color-text-secondary: #A0A0A0;
-  --color-text-tertiary: #777777;
+  --color-bg: #0C0A13;                /* Deep midnight with violet undertone */
+  --color-bg-secondary: #13111C;      /* Slightly elevated */
+  --color-bg-tertiary: #1C1926;       /* Cards, panels */
+  --color-bg-elevated: #211E2E;       /* Modals, dropdowns */
 
-  --color-border: #333333;
-  --color-border-hover: #444444;
+  --color-text: #F4F4F5;
+  --color-text-secondary: #A1A1AA;
+  --color-text-tertiary: #71717A;
 
-  --color-shadow: rgba(0, 0, 0, 0.3);
-  --color-shadow-elevated: rgba(0, 0, 0, 0.5);
+  --color-border: #2E2B3A;
+  --color-border-hover: #3F3B4F;
+
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-shadow-elevated: rgba(0, 0, 0, 0.6);
+  --color-shadow-primary: rgba(167, 139, 250, 0.2);
+
+  /* Dark mode gradients */
+  --gradient-primary: linear-gradient(135deg, #A78BFA 0%, #F472B6 100%);
+  --gradient-aurora: linear-gradient(135deg, #A78BFA 0%, #F472B6 50%, #FBBF24 100%);
+  --gradient-subtle: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-secondary) 100%);
+  --gradient-card-shine: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 50%);
+
+  /* Dark mode glass */
+  --glass-bg: rgba(28, 25, 38, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================
@@ -295,28 +329,19 @@ img {
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  background: var(--gradient-primary);
   color: white;
   font-size: 14px;
   font-weight: var(--font-weight-bold);
   border-radius: 50%;
   letter-spacing: 0.5px;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  box-shadow: 0 2px 8px rgba(193, 123, 95, 0.25);
+  box-shadow: 0 2px 12px var(--color-shadow-primary);
 }
 
 .nav__brand:hover .brand-badge {
   transform: scale(1.08);
-  box-shadow: 0 4px 12px rgba(193, 123, 95, 0.35);
-}
-
-[data-theme="dark"] .brand-badge {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-  box-shadow: 0 2px 8px rgba(212, 150, 125, 0.2);
-}
-
-[data-theme="dark"] .nav__brand:hover .brand-badge {
-  box-shadow: 0 4px 12px rgba(212, 150, 125, 0.3);
+  box-shadow: 0 4px 20px var(--color-shadow-primary);
 }
 
 .brand-name {
