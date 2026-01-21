@@ -684,6 +684,19 @@ img {
     transform: translateX(-50%) scaleX(1);
   }
 
+  /* Theme toggle in mobile nav */
+  .mobile-bottom-nav .theme-toggle {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-bottom-nav .theme-toggle__icon {
+    width: 20px;
+    height: 20px;
+  }
+
   /* Add padding to body so content isn't hidden behind bottom nav */
   body {
     padding-bottom: 56px;
