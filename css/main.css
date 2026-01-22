@@ -217,6 +217,25 @@ body {
   overflow-x: hidden;
 }
 
+/* Homepage gradient background - covers full viewport */
+body.homepage {
+  background:
+    radial-gradient(ellipse 120% 80% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 100% at 100% 100%, rgba(236, 72, 153, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 80% at 0% 50%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 150% 100% at 50% 100%, rgba(139, 92, 246, 0.08) 0%, transparent 70%),
+    var(--color-bg);
+}
+
+[data-theme="dark"] body.homepage {
+  background:
+    radial-gradient(ellipse 120% 80% at 50% 0%, rgba(167, 139, 250, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 100% at 100% 100%, rgba(244, 114, 182, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 80% at 0% 50%, rgba(251, 191, 36, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 150% 100% at 50% 100%, rgba(167, 139, 250, 0.1) 0%, transparent 70%),
+    var(--color-bg);
+}
+
 main {
   flex: 1;
   padding-top: var(--header-height);
