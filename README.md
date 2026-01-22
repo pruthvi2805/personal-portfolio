@@ -1,24 +1,22 @@
 <div align="center">
 
-# 🎨 Portfolio — Pruthvi Kauticwar
+# Portfolio — Pruthvi Kauticwar
 
 ### A modern, responsive portfolio website built with vanilla web technologies
 
-[![Live Site](https://img.shields.io/badge/🌐_Live_Site-portfolio.kpruthvi.com-4A90E2?style=for-the-badge&labelColor=2C3E50)](https://portfolio.kpruthvi.com)
-[![License](https://img.shields.io/badge/📄_License-MIT-00D084?style=for-the-badge&labelColor=2C3E50)](LICENSE)
-[![Cloudflare](https://img.shields.io/badge/☁️_Hosted_on-Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=2C3E50)](https://pages.cloudflare.com)
+[![Live Site](https://img.shields.io/badge/Live_Site-portfolio.kpruthvi.com-4A90E2?style=for-the-badge&labelColor=2C3E50)](https://portfolio.kpruthvi.com)
+[![License](https://img.shields.io/badge/License-MIT-00D084?style=for-the-badge&labelColor=2C3E50)](LICENSE)
+[![Cloudflare](https://img.shields.io/badge/Hosted_on-Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=2C3E50)](https://pages.cloudflare.com)
 
 <br>
 
-```
-🚀 Professional • 📱 Responsive • ⚡ Fast • 🎯 Focused
-```
+**Professional • Responsive • Fast • Focused**
 
 </div>
 
 <br>
 
-## 📖 About
+## About
 
 A professional portfolio website showcasing my work experience, technical skills, and projects. Built with a focus on **performance**, **accessibility**, and **clean design** — no frameworks, just pure HTML, CSS, and JavaScript.
 
@@ -30,13 +28,13 @@ A professional portfolio website showcasing my work experience, technical skills
 
 <br>
 
-## ✨ Features
+## Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 🎨 Design & UX
+### Design & UX
 - **Fully Responsive** — Optimized for all screen sizes
 - **Theme Toggle** — Seamless dark/light mode switching
 - **Print-Optimized** — Dedicated print-friendly resume view
@@ -45,7 +43,7 @@ A professional portfolio website showcasing my work experience, technical skills
 </td>
 <td width="50%">
 
-### ⚙️ Technical
+### Technical
 - **SEO Optimized** — Complete with sitemap and meta tags
 - **Fast & Lightweight** — Pure vanilla web technologies
 - **Modern CSS** — Grid, Flexbox, Custom Properties
@@ -57,13 +55,13 @@ A professional portfolio website showcasing my work experience, technical skills
 
 <br>
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <table>
 <thead>
 <tr>
-<th align="left">🏗️ Category</th>
-<th align="left">🔧 Technologies</th>
+<th align="left">Category</th>
+<th align="left">Technologies</th>
 </tr>
 </thead>
 <tbody>
@@ -88,31 +86,31 @@ A professional portfolio website showcasing my work experience, technical skills
 
 <br>
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 personal-portfolio/
 │
-├── 🏠 index.html              # Main portfolio page
-├── 📄 resume.html             # Interactive resume/CV
-├── 🖨️  resume-print.html       # Print-optimized resume
+├── index.html              # Main portfolio page
+├── resume.html             # Interactive resume/CV
+├── resume-print.html       # Print-optimized resume
 │
-├── 🎨 css/                    # Stylesheets
-│   ├── styles.css             # Global styles
-│   ├── theme.css              # Theme variables
-│   └── ...                    # Component-specific styles
+├── css/                    # Stylesheets
+│   ├── styles.css          # Global styles
+│   ├── theme.css           # Theme variables
+│   └── ...                 # Component-specific styles
 │
-├── ⚡ js/                     # JavaScript modules
-│   ├── theme-toggle.js        # Dark/light mode logic
-│   └── ...                    # Interactive features
+├── js/                     # JavaScript modules
+│   ├── theme-toggle.js     # Dark/light mode logic
+│   └── ...                 # Interactive features
 │
-├── 🗺️  sitemap.xml             # SEO sitemap
-└── 📋 LICENSE                 # MIT License
+├── sitemap.xml             # SEO sitemap
+└── LICENSE                 # MIT License
 ```
 
 <br>
 
-## 💻 Local Development
+## Local Development
 
 ### Quick Start
 
@@ -129,7 +127,7 @@ open index.html
 </td>
 <td width="50%">
 
-**Option 2: Local Server** ⭐ _Recommended_
+**Option 2: Local Server** (Recommended)
 ```bash
 # Python 3
 python -m http.server 8000
@@ -137,7 +135,7 @@ python -m http.server 8000
 # Node.js
 npx serve
 ```
-Then visit → `http://localhost:8000`
+Then visit `http://localhost:8000`
 
 </td>
 </tr>
@@ -145,7 +143,7 @@ Then visit → `http://localhost:8000`
 
 <br>
 
-## 🚀 Deployment
+## Deployment
 
 This project uses **Cloudflare Pages** for automatic deployments:
 
@@ -159,14 +157,14 @@ This project uses **Cloudflare Pages** for automatic deployments:
 
 <br>
 
-## 📄 Pages
+## Pages
 
 <table>
 <thead>
 <tr>
-<th align="left">📑 Page</th>
-<th align="left">🔗 URL</th>
-<th align="left">📝 Description</th>
+<th align="left">Page</th>
+<th align="left">URL</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
@@ -190,7 +188,7 @@ This project uses **Cloudflare Pages** for automatic deployments:
 
 <br>
 
-## 🌐 Browser Support
+## Browser Support
 
 <div align="center">
 
@@ -203,7 +201,7 @@ This project uses **Cloudflare Pages** for automatic deployments:
 
 <br>
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
