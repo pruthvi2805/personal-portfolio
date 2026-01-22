@@ -210,7 +210,7 @@
    RESUME PAGE
    ============================================ */
 
-/* Resume page background gradient */
+/* Resume page background gradient - matching homepage style */
 main:has(.resume-layout) {
   position: relative;
 }
@@ -218,33 +218,23 @@ main:has(.resume-layout) {
 main:has(.resume-layout)::before {
   content: '';
   position: fixed;
-  top: 30%;
-  left: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.04) 0%, transparent 70%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 40%);
   pointer-events: none;
-  z-index: 0;
-}
-
-main:has(.resume-layout)::after {
-  content: '';
-  position: fixed;
-  bottom: 10%;
-  right: -5%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.03) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 [data-theme="dark"] main:has(.resume-layout)::before {
-  background: radial-gradient(circle, rgba(167, 139, 250, 0.03) 0%, transparent 70%);
-}
-
-[data-theme="dark"] main:has(.resume-layout)::after {
-  background: radial-gradient(circle, rgba(167, 139, 250, 0.02) 0%, transparent 70%);
+  background:
+    radial-gradient(circle at 50% 30%, rgba(167, 139, 250, 0.18) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(244, 114, 182, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(251, 191, 36, 0.08) 0%, transparent 40%);
 }
 
 /* Resume Layout - Content-first, TOC in margin */
