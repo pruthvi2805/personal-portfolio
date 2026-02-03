@@ -54,12 +54,12 @@
 
 .home__name {
   font-family: var(--font-sans);
-  font-size: var(--font-size-6xl);
+  font-size: clamp(3rem, 10vw, var(--font-size-6xl));
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
   letter-spacing: -0.05em;
   line-height: 0.95;
-  margin-bottom: var(--space-32);
+  margin-bottom: var(--space-20);
   opacity: 0;
   animation: fadeInUp 1s var(--ease-out) 0.2s forwards;
   position: relative;
@@ -73,7 +73,7 @@
   width: 60px;
   height: 4px;
   background: var(--gradient-aurora);
-  margin: var(--space-24) auto 0;
+  margin: var(--space-20) auto 0;
   border-radius: var(--radius-full);
   transform-origin: center;
   transform: scaleX(0);
@@ -85,7 +85,7 @@
   font-size: var(--font-size-xl);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-medium);
-  margin-bottom: var(--space-48);
+  margin-bottom: var(--space-32);
   opacity: 0;
   animation: fadeInUp 1s var(--ease-out) 0.4s forwards;
   display: flex;
@@ -105,7 +105,7 @@
 }
 
 .home__intro p {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   color: var(--color-text-tertiary);
   max-width: 600px;
   margin: 0 auto;
