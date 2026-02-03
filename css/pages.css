@@ -13,8 +13,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: var(--space-64) var(--space-24);
+  justify-content: flex-start;
+  /* Shift to top alignment */
+  padding: 12vh var(--space-24) var(--space-32);
+  /* Golden ratio top padding */
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -54,12 +56,12 @@
 
 .home__name {
   font-family: var(--font-sans);
-  font-size: clamp(3.5rem, 10vw, var(--font-size-6xl));
+  font-size: clamp(3rem, 8vw, var(--font-size-6xl));
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
   letter-spacing: -0.05em;
-  line-height: 0.95;
-  margin-bottom: var(--space-32);
+  line-height: 1;
+  margin-bottom: var(--space-16);
   opacity: 0;
   animation: fadeInUp 1s var(--ease-out) 0.2s forwards;
   position: relative;
@@ -70,10 +72,10 @@
 .home__name::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 4px;
+  width: 48px;
+  height: 3px;
   background: var(--gradient-aurora);
-  margin: var(--space-32) auto 0;
+  margin: var(--space-16) auto 0;
   border-radius: var(--radius-full);
   transform-origin: center;
   transform: scaleX(0);
@@ -82,10 +84,10 @@
 }
 
 .home__role {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-medium);
-  margin-bottom: var(--space-48);
+  margin-bottom: var(--space-32);
   opacity: 0;
   animation: fadeInUp 1s var(--ease-out) 0.4s forwards;
   display: flex;
@@ -99,19 +101,28 @@
 .home__role::after {
   content: '';
   height: 1px;
-  width: 32px;
+  width: 24px;
   background: var(--color-border);
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .home__intro p {
   font-size: var(--font-size-base);
   color: var(--color-text-tertiary);
-  max-width: 600px;
+  max-width: 580px;
   margin: 0 auto;
   line-height: var(--line-height-normal);
   opacity: 0;
   animation: fadeIn 1.2s var(--ease-out) 0.6s forwards;
+}
+
+.home__actions {
+  margin-top: var(--space-32);
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 1s var(--ease-out) 0.8s forwards;
 }
 
 /* Mobile adjustments */
