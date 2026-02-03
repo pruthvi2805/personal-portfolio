@@ -66,7 +66,7 @@
   display: inline-block;
 }
 
-/* Restored & Refined Aurora Line */
+/* Restored & Refined Aurora Line - Optimized for stability */
 .home__name::after {
   content: '';
   display: block;
@@ -75,8 +75,10 @@
   background: var(--gradient-aurora);
   margin: var(--space-24) auto 0;
   border-radius: var(--radius-full);
-  opacity: 0.8;
-  animation: fadeIn 1.2s var(--ease-out) 0.8s forwards;
+  transform-origin: center;
+  transform: scaleX(0);
+  opacity: 0;
+  animation: expandX 1s var(--ease-out) 0.8s forwards;
 }
 
 .home__role {
@@ -364,41 +366,62 @@ main:has(.resume-layout)::before {
     display: none;
   }
 
+  .resume-mobile-nav {
+    display: block;
+    position: sticky;
+    top: 44px;
+    left: 0;
+    right: 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--blur-md));
+    -webkit-backdrop-filter: blur(var(--blur-md));
+    border-bottom: 1px solid var(--glass-border);
+    z-index: 100;
+    margin: 0 calc(-1 * var(--space-20));
+    margin-bottom: var(--space-24);
+    padding: 0 var(--space-20);
+  }
+
+  .resume-mobile-nav__list {
+    display: flex;
+    gap: var(--space-8);
+    list-style: none;
+    margin: 0;
+    padding: var(--space-12) 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .resume-mobile-nav__list::-webkit-scrollbar {
+    display: none;
+  }
+
   .resume-mobile-nav__link {
     flex-shrink: 0;
-    padding: var(--space-8) var(--space-14);
-    min-height: 44px;
+    padding: var(--space-8) var(--space-16);
+    min-height: 40px;
     display: flex;
     align-items: center;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    font-size: 12px;
+    font-weight: var(--font-weight-semibold);
     color: var(--color-text-tertiary);
     text-decoration: none;
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-md);
     background-color: transparent;
-    transition: all var(--transition-fast);
+    transition: all var(--transition-base);
     white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    scroll-snap-align: start;
+    border: 1px solid transparent;
   }
 
   .resume-mobile-nav__link.active {
     color: var(--color-primary);
-    background-color: rgba(139, 92, 246, 0.1);
-  }
-
-  [data-theme="dark"] .resume-mobile-nav__link.active {
-    background-color: rgba(167, 139, 250, 0.15);
-  }
-
-  /* Fade gradient to indicate scrollable content */
-  .resume-mobile-nav::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 40px;
-    background: linear-gradient(to left, var(--color-bg), transparent);
-    pointer-events: none;
+    background-color: var(--color-primary-glow);
+    border-color: hsla(var(--h-primary), 80%, 45%, 0.1);
   }
 
   .resume-layout {
