@@ -326,6 +326,15 @@ img {
   letter-spacing: 0.5px;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   box-shadow: 0 2px 12px var(--color-shadow-primary);
+  overflow: hidden;
+  padding: 4px;
+}
+
+.brand-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .nav__brand:hover .brand-badge {
@@ -875,6 +884,7 @@ body.loaded {
     padding: var(--space-32) 0;
   }
 }
+
 /* ============================================
    ANIMATIONS - Global Keyframes
    ============================================ */
@@ -883,6 +893,7 @@ body.loaded {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -893,6 +904,7 @@ body.loaded {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -904,6 +916,7 @@ body.loaded {
     opacity: 0;
     transform: translateX(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -915,6 +928,7 @@ body.loaded {
     transform: scaleX(0);
     opacity: 0;
   }
+
   to {
     transform: scaleX(1);
     opacity: 0.8;
