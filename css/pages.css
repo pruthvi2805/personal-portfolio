@@ -46,25 +46,41 @@
   font-weight: var(--font-weight-semibold);
   color: var(--color-primary);
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: var(--space-16);
+  letter-spacing: 0.25em;
+  margin-bottom: var(--space-12);
   opacity: 0;
   animation: fadeIn 0.8s var(--ease-out) forwards;
 }
 
 .home__name {
-  font-size: var(--font-size-5xl);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-6xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
   letter-spacing: -0.05em;
-  line-height: 0.9;
-  margin-bottom: var(--space-24);
+  line-height: 0.95;
+  margin-bottom: var(--space-32);
   opacity: 0;
   animation: fadeInUp 1s var(--ease-out) 0.2s forwards;
+  position: relative;
+  display: inline-block;
+}
+
+/* Restored & Refined Aurora Line */
+.home__name::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-aurora);
+  margin: var(--space-24) auto 0;
+  border-radius: var(--radius-full);
+  opacity: 0.8;
+  animation: fadeIn 1.2s var(--ease-out) 0.8s forwards;
 }
 
 .home__role {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-48);
@@ -73,27 +89,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
+  letter-spacing: -0.01em;
 }
 
 .home__role::before,
 .home__role::after {
   content: '';
   height: 1px;
-  width: 24px;
+  width: 32px;
   background: var(--color-border);
+  opacity: 0.5;
 }
 
 .home__intro p {
-  font-size: var(--font-size-base);
-  color: var(--color-text-secondary);
-  max-width: 540px;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-tertiary);
+  max-width: 600px;
   margin: 0 auto;
   line-height: var(--line-height-normal);
-}
-
-.home__intro p:last-child {
-  margin-bottom: 0;
+  opacity: 0;
+  animation: fadeIn 1.2s var(--ease-out) 0.6s forwards;
 }
 
 /* Mobile adjustments */
