@@ -1,0 +1,30 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website built with vanilla web technologies",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pruthvi2805/personal-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pruthvi2805/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/pruthvi2805/personal-portfolio#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.3.0"
+  }
+}

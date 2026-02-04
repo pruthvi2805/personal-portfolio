@@ -10,3 +10,10 @@ Thumbs.db
 
 # Claude Code
 .claude/
+
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Docker
+.docker/

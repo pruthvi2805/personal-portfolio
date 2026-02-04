@@ -1,0 +1,10 @@
+# Senior Engineer Rules
+
+1. **Bug Reproduction**: When a bug is reported, you MUST write a reproduction test first.
+2. **Assumption Surfacing**: State assumptions explicitly before starting any non-trivial implementation.
+3. **Plan Mode**: Enter plan mode for any task with 3+ steps.
+4. **Task Tracking**: Maintain `tasks/todo.md` and `tasks/lessons.md`.
+5. **Simplicity**: Resist bloating abstractions. Boring and obvious solutions are preferred.
+6. **Documentation**: Use the "CHANGES MADE / THINGS I DIDN'T TOUCH / POTENTIAL CONCERNS" summary format for all major edits.
+
+Refer to `SENIOR_ENGINEER_INSTRUCTIONS.md` for the full manifesto.
